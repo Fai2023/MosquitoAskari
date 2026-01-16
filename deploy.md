@@ -98,5 +98,19 @@ I have set up a GitHub Actions workflow that will automatically deploy your site
 
 ---
 
-## 6. Formspree Integration (Reminder)
+## 7. Deploy to Netlify (Easiest Alternative)
+
+1. Log in to your [Netlify Dashboard](https://app.netlify.com/).
+2. Click **Add new site** > **Import an existing project**.
+3. Connect your GitHub account and select the `MosquitoAskari` repository.
+4. **Site Settings**:
+   - Branch to deploy: `main`.
+   - Build command: `npm run build`.
+   - Publish directory: `dist`.
+5. Click **Deploy MosquitoAskari**.
+6. **Custom Domain**: Go to **Domain management** > **Add domain** to link `mosquitoaskari.com`.
+
+---
+
+## 8. Formspree Integration (Reminder)
 The "Expression of Interest" form is configured to send emails to `info@mosquitoaskari.com`. Ensure the environment where you deploy has internet access (Standard for all above options).
