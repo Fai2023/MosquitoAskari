@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle, Mail } from "lucide-react";
 
 const CTA = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="py-24 bg-cream" id="contact">
       <div className="container mx-auto px-4">
@@ -26,16 +29,18 @@ const CTA = () => {
               <Button
                 variant="hero"
                 size="xl"
-                className="animate-pulse-glow"
+                className="animate-pulse-glow bg-[#f5a623] text-black hover:bg-[#e69512] border-none"
+                onClick={() => navigate("/expression-of-interest")}
+              >
+                Expression of Interest
+              </Button>
+              <Button
+                variant="heroOutline"
+                size="xl"
                 onClick={() => document.getElementById('footer-contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Order Now
               </Button>
-              <a href="tel:+255763001100">
-                <Button variant="heroOutline" size="xl">
-                  Call us for a Free Quote
-                </Button>
-              </a>
             </div>
 
             {/* Contact Methods */}

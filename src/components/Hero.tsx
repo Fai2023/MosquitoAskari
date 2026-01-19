@@ -1,8 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Shield, Zap, Award } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image & Overlay */}
@@ -43,6 +46,14 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
+            <Button
+              variant="golden"
+              size="xl"
+              className="bg-[#f5a623] text-black hover:bg-[#e69512] transition-all opacity-100 shadow-xl font-bold"
+              onClick={() => navigate("/expression-of-interest")}
+            >
+              Expression of Interest
+            </Button>
             <Button
               variant="outline"
               size="xl"
