@@ -40,32 +40,39 @@ const ExpressionOfInterest = () => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        const formData = new FormData(e.target as HTMLFormElement);
+        const formElement = e.target as HTMLFormElement;
+        const formData = new FormData(formElement);
 
-        // Add dynamic data not directly in form fields if needed
+        // Add dynamic data
         formData.append("selected_period", `${period} months`);
         formData.append("monthly_price", `TZS ${prices[period as keyof typeof prices]}`);
         formData.append("locations_json", JSON.stringify(locations));
 
+        // FormSubmit.co configuration
+        // Disable captcha for smoother experience if desired, or keep it. Default is enabled.
+        // formData.append("_captcha", "false"); 
+        formData.append("_subject", "New Expression of Interest - MosquitoAskari");
+        formData.append("_template", "table"); // Makes the email look nicer
+
         try {
-            const response = await fetch("https://formspree.io/f/xwvvpdzp", {
+            const response = await fetch("https://formsubmit.co/ajax/info@mosquitoaskari.com", {
                 method: "POST",
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
+                body: formData
             });
 
             if (response.ok) {
                 toast({
                     title: "Form Submitted Successfully",
-                    description: "Thank you! Your expression of interest has been sent to our team. We will contact you shortly.",
+                    description: "Thank you! Your expression of interest has been sent. Please check your email for any confirmation if applicable.",
                 });
-                // Reset form or redirect if desired
+                // Optional: Reset form
+                // formElement.reset();
+                // setLocations([{ name: "", address: "", quantity: 1 }]);
             } else {
                 throw new Error("Form submission failed");
             }
         } catch (error) {
+            console.error('Submission error:', error);
             toast({
                 variant: "destructive",
                 title: "Submission Error",

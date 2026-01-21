@@ -55,17 +55,17 @@ const ProductGallery = () => {
                 {/* Gallery Horizontal Scroll */}
                 <div className="flex overflow-x-auto space-x-6 pb-4 snap-x snap-mandatory">
                     {/* YouTube Short Embed */}
-                    <div className="flex-shrink-0 w-48 snap-center relative aspect-square rounded-2xl overflow-hidden shadow-soft hover:shadow-elevated transition-all duration-500 hover:-translate-y-1">
+                    <div className="flex-shrink-0 w-48 snap-center relative aspect-square rounded-2xl overflow-hidden shadow-soft hover:shadow-elevated transition-all duration-500 hover:-translate-y-1 group">
                         <iframe
-                            src="https://www.youtube.com/embed/ksCGH1HZOh8?controls=0&rel=0"
+                            src="https://www.youtube.com/embed/ksCGH1HZOh8?controls=0&rel=0&autoplay=1&mute=1&loop=1&playlist=ksCGH1HZOh8"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-cover pointer-events-none group-hover:pointer-events-auto"
                             title="MosquitoAskari Product Short"
                         ></iframe>
-                        <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300" />
-                        <div className="absolute bottom-6 left-6 z-10">
+                        <div className="absolute inset-0 bg-black/20 group-hover:opacity-0 transition-opacity duration-300 pointer-events-none" />
+                        <div className="absolute bottom-6 left-6 z-10 pointer-events-none group-hover:opacity-0 transition-opacity duration-300">
                             <span className="text-white font-semibold text-lg">Product Demonstration</span>
                         </div>
                     </div>
