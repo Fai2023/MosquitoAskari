@@ -71,11 +71,11 @@ const HireAndLease = () => {
               <div className="space-y-3">
                 <div className="flex justify-between items-center border-b border-border/50 pb-2">
                   <span className="font-medium">12 Month Contract</span>
-                  <span className="font-bold text-primary text-lg">TZS 300,000 <span className="text-xs font-normal text-muted-foreground">+ VAT</span> <span className="text-sm font-normal text-muted-foreground">/mo</span></span>
+                  <span className="font-bold text-primary text-lg">TZS 325,000 <span className="text-xs font-normal text-muted-foreground">+ VAT</span> <span className="text-sm font-normal text-muted-foreground">/mo</span></span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="font-medium">6 Month Contract</span>
-                  <span className="font-bold text-primary text-lg">TZS 375,000 <span className="text-xs font-normal text-muted-foreground">+ VAT</span> <span className="text-sm font-normal text-muted-foreground">/mo</span></span>
+                  <span className="font-bold text-primary text-lg">TZS 400,000 <span className="text-xs font-normal text-muted-foreground">+ VAT</span> <span className="text-sm font-normal text-muted-foreground">/mo</span></span>
                 </div>
               </div>
             </div>

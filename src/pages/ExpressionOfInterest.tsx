@@ -16,8 +16,8 @@ const ExpressionOfInterest = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
 
     const prices = {
-        "6": "375,000",
-        "12": "300,000"
+        "6": "400,000",
+        "12": "325,000"
     };
 
     const addLocation = () => {

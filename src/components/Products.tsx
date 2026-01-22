@@ -5,7 +5,7 @@ const products = [
   {
     id: 1,
     name: "Askari Pro Trap",
-    image: "https://ik.imagekit.io/8jn9lgbbcw/2_M3000/M3000/side%202.jpg",
+    image: "https://ik.imagekit.io/8jn9lgbbcw/2_M3000/M3000/co2-mosquito-trap-pm-mm3000%20(1).jpg",
     description: "The Askari Pro Trap M3000 is a chemical-free outdoor mosquito trap powered by the same gas used for BBQs. It converts gas into CO₂ and uses heat and light to mimic a human which naturally attracts and captures mosquitoes. Scientifically tested and backed by 18 years of research, the M3000 effectively reduces mosquito populations, keeping your outdoor spaces comfortable and bite-free.",
     popular: true,
     features: [
@@ -21,7 +21,7 @@ const products = [
     id: 2,
     name: "Attractant Refill Pack",
     subtitle: "3-Month Supply",
-    image: "https://ik.imagekit.io/8jn9lgbbcw/2_M3000/M3000/attractant.jpeg",
+    image: "https://ik.imagekit.io/8jn9lgbbcw/2_M3000/M3000/co2-mosquito-trap-pm-mm3000%20(2).jpg",
     description: "Maximize your catch rates with our scientifically formulated attractant. Designed to mimic human skin scents, significantly increasing the trap's effectiveness against aggressive mosquito species.",
     popular: false,
     features: [

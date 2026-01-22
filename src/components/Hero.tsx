@@ -55,9 +55,9 @@ const Hero = () => {
               Expression of Interest
             </Button>
             <Button
-              variant="outline"
+              variant="default"
               size="xl"
-              className="border-primary-foreground/30 bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20 hover:text-primary-foreground backdrop-blur-sm"
+              className="bg-white text-primary hover:bg-gray-100 font-bold shadow-xl border-2 border-white"
               onClick={() => {
                 const productsSection = document.getElementById('products');
                 if (productsSection) {
